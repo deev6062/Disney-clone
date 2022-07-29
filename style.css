@@ -1,0 +1,376 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: #0d101b;
+    position: relative;
+    font-family: roboto, sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background: #040714;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    margin: top 10px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.right-container{
+    display: block;
+    margin-left: 20%;
+}
+
+.search-box{
+    border: none;
+    border-bottom: 1px solid#aaa;
+    background:transparent;
+    outline: none;
+    height: 20px;
+    color: #fff;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.search-box:focus{
+    width: 400px;
+    border-color: #1f80e0;
+}
+
+
+.sub-btn{
+    background: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;     
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0 15px;
+}
+
+.login-link{
+    background: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;     
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0 15px;
+
+}
+
+.brand-logo{
+    height: 60px;
+    margin-left: -25px;
+}
+
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #555555;
+  border-radius: 5px;
+}
+.button1:hover {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.carousel-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+
+.carousel{
+    display: flex;
+    width: 92%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slider{
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.slide-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, #030b17 80%, #0c111b00);
+    color: #fff;
+}
+
+.card-container{
+    position: relative;
+    width: 92%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.card{
+    position: relative;
+    min-width: calc(100%/5 - 10px);
+    width: calc(100%/5 - 10px);
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-style: solid;
+    border-color: hsla(0, 0%, 37%, 0.349);
+    border-radius: 10px;
+}
+
+
+.card:hover .card-image{
+    background-color: rgba(92, 89, 89, 0.678);
+}
+
+.title{
+    color: #fff;
+    opacity: 0.9;
+    padding-left: 4%;
+    margin-top: 80px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+.movie-card-container{
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 95%;
+    height: 10vw;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.movie-card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.movie-card{
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    transition: .5s;
+}
+
+.movie-card img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-card:hover{
+    transform: scale(1.1);
+}
+
+.container{
+overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+.content{
+    margin-bottom: 10vw;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 40px;
+  height: 100%;
+}
+
+.bg{
+    height: 100%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("login-background.jpg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.login-content{
+     max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo1{
+     margin-bottom: 12px;
+  max-width: 600px;
+  min-height: 1px;
+  display: block;
+  width: 100%;
+}
+
+.logo2{
+max-width: 600px;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.login-content a{
+    font-weight: bold;
+  color: #f9f9f9;
+  background-color: #0063e5;
+  margin-bottom: 12px;
+  width: 100%;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  padding: 16.5px 0;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.login-content a:hover{
+    background-color: #0483ee;
+}
+
+.login-content p{
+    color: hsla(0, 0%, 95.3%, 1);
+  font-size: 11px;
+  margin: 0 0 24px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+ /*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+
+  @media screen and (min-width: 1200px) {
+
+    }
+  
+
+  @media screen and (min-width: 991px) {
+
+   
+  }
+
+  @media screen and (max-width: 991px) {
+    .brand-logo{
+    height: 40px;
+    margin-left: 10px;
+    }
+    .button {
+            padding: 10px 20px;
+            font-size: 10px;
+            margin: 3px 1px;
+    }
+    .card-container{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    margin-top: 50px;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+  
+  }
